@@ -615,3 +615,9 @@ summary {
 .p-accordion.is-compact .p-accordion__panel {
   padding-left: $sph-inner--small;
 }
+
+// Print styles
+@import "print-styles";
+@media print { 
+  @include ubuntu-print;
+}

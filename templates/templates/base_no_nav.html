@@ -28,8 +28,10 @@
 
     <!-- stylesheets -->
     <link rel="stylesheet" type="text/css" media="screen" href="{{ versioned_static('css/styles.css') }}" />
-    <link rel="stylesheet" type="text/css" media="print" href="{{ versioned_static('css/print.css') }}" />
-
+    <!-- Legacy browser print styles support -->
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" type="text/css" media="print" href="{{ versioned_static('css/print.css') }}">
+    <![endif]-->
     <script>
       var html = document.documentElement
       html.classList.replace("no-js", "js");
